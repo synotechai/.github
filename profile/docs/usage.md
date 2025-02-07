@@ -92,7 +92,7 @@ Agent Flux supports direct file attachments in the chat interface for seamless f
   - Perform operations on multiple files simultaneously
   - Confirm successful file operations with detailed responses
 
-![Working with Attachments](res/ui-attachments-2.png)
+![Working with Attachments](res/ui-attachments-2-updated.png)
 
 > [!TIP]
 > When working with multiple files, you can attach them all at once and then give instructions about what to do with them. The agent will handle them as a batch while keeping you informed of the progress.
