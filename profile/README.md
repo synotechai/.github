@@ -28,7 +28,7 @@
 - Agent Flux is not limited to predefined tasks but can be tailored for specific needs. As a general-purpose AI assistant, it autonomously gathers information, executes commands, writes code, and collaborates with other agents to complete tasks efficiently.
 - With persistent memory, it retains past solutions, facts, and instructions, continuously improving its accuracy and problem-solving speed over time.
 
-![Agent Flux Working](docs/res/ui-screen.png)
+![Agent Flux Working](docs/res/ui-screen-updated.png)
 
 2. **Computer as a Dynamic Tool**
 
