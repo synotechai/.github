@@ -208,7 +208,7 @@ Agent Flux supports KaTeX for beautiful mathematical typesetting:
   - Integrals, summations, and limits
   - Mathematical alignments and equations
 
-![KaTeX display](res/ui-katex-2.png)
+![KaTeX display](res/ui-katex-2-updated.png)
 
 > [!TIP]
 > When asking the agent to solve mathematical problems, it will automatically respond using KaTeX formatting for clear and professional-looking mathematical expressions.
