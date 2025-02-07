@@ -157,7 +157,7 @@ Agent Flux provides a comprehensive settings interface to customize various aspe
 - **Context Length:** Set the maximum token limit for context window
 - **Context Window Space:** Configure how much of the context window is dedicated to chat history
 
-![chat model settings](res/setup/settings/1-agentConfig-updated.png)
+![chat model settings](res/setup/settings/2-chat-model-updated.png)
 
 ### Utility Model Configuration
 - **Provider & Model:** Select a smaller, faster model for utility tasks like memory organization and summarization
