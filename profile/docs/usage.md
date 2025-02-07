@@ -199,7 +199,7 @@ Agent Flux supports KaTeX for beautiful mathematical typesetting:
   - Example: Type `$$F = G\frac{m_1m_2}{r^2}$$`
   - Renders as a centered equation
 
-![KaTeX](res/ui-katex-1.png)
+![KaTeX](res/ui-katex-1-updated.png)
 
 * **Complex Mathematics:** Supports full KaTeX syntax for:
   - Fractions, exponents, and roots
