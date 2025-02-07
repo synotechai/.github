@@ -103,7 +103,7 @@ Note*: Offline operation requires prompt adjustments
   - Host path: Your chosen directory (e.g., `C:\agent-flux-data`)
   - Container path: `/a0`
 
-![docker port mapping](res/setup/3-docker-port-mapping-updated.png)
+![docker port mapping](res/setup/3-docker-port-mapping-updatedv2.png)
 
 - Click the `Run` button in the "Images" tab.
 - The container will start and show in the "Containers" tab
