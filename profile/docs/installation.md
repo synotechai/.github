@@ -69,7 +69,7 @@ Note*: Offline operation requires prompt adjustments
 - Click the `Pull` button
 - The image will be downloaded to your machine in a few minutes
 
-![docker pull](res/setup/1-docker-image-search.png)
+![docker pull](res/setup/1-docker-image-search-updated.png)
 
 > [!TIP]
 > Alternatively, run the following command in your terminal:
@@ -103,12 +103,12 @@ Note*: Offline operation requires prompt adjustments
   - Host path: Your chosen directory (e.g., `C:\agent-flux-data`)
   - Container path: `/a0`
 
-![docker port mapping](res/setup/3-docker-port-mapping.png)
+![docker port mapping](res/setup/3-docker-port-mapping-updated.png)
 
 - Click the `Run` button in the "Images" tab.
 - The container will start and show in the "Containers" tab
 
-![docker containers](res/setup/4-docker-container-started.png)
+![docker containers](res/setup/4-docker-container-started-updated.png)
 
 > [!TIP]
 > Alternatively, run the following command in your terminal:
@@ -122,7 +122,7 @@ Note*: Offline operation requires prompt adjustments
 - The framework will take a few seconds to initialize and the Docker logs will look like the image below.
 - Find the mapped port in Docker Desktop (shown as `<PORT>:80`) or click the port right under the container ID as shown in the image below
 
-![docker logs](res/setup/5-docker-click-to-open.png)
+![docker logs](res/setup/5-docker-click-to-open-updated.png)
 
 - Open `http://localhost:<PORT>` in your browser
 - The Web UI will open. Agent Flux is ready for configuration!
