@@ -126,7 +126,7 @@ One of Agent Flux's unique features is multi-agent cooperation.
 * **Communication:** Agents can communicate with each other, sharing information and coordinating actions. The system prompt and message history play a key role in guiding this communication.
 * **Hierarchy:** Agent Flux uses a [hierarchical structure](architecture.md#agent-hierarchy-and-communication), with superior agents delegating tasks to subordinates.  This allows for structured problem-solving and efficient resource allocation.
 
-![](res/physics.png)
+![](res/physics-updated.png)
 ![](res/physics-2.png)
 
 ## Prompt Engineering
