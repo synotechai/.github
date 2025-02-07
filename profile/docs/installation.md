@@ -1,9 +1,3 @@
-# Users installation guide for Windows, macOS and Linux
-
-[![Setup Guide](res/setup/thumb_setup.png)](https://www.youtube.com/watch?v=wWAqJpl3uQE)
-
-The following user guide provides instructions for installing and running Agent Flux using Docker, which is the primary runtime environment for the framework. For developers and contributors, we also provide instructions for setting up the [full development environment](#in-depth-guide-for-full-binaries-installation).
-
 ### Need updates from v0.7? 👉[How to update Agent Flux](#how-to-update-agent-flux)
 
 ## Windows, macOS and Linux Setup Guide
