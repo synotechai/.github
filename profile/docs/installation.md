@@ -127,7 +127,7 @@ Note*: Offline operation requires prompt adjustments
 - Open `http://localhost:<PORT>` in your browser
 - The Web UI will open. Agent Flux is ready for configuration!
 
-![docker ui](res/setup/6-docker-a0-running.png)
+![docker ui](res/setup/6-docker-a0-running-updated.png)
 
 > [!TIP]
 > You can also access the Web UI by clicking the ports right under the container ID in Docker Desktop.
@@ -157,7 +157,7 @@ Agent Flux provides a comprehensive settings interface to customize various aspe
 - **Context Length:** Set the maximum token limit for context window
 - **Context Window Space:** Configure how much of the context window is dedicated to chat history
 
-![chat model settings](res/setup/settings/2-chat-model.png)
+![chat model settings](res/setup/settings/1-agentConfig-updated.png)
 
 ### Utility Model Configuration
 - **Provider & Model:** Select a smaller, faster model for utility tasks like memory organization and summarization
@@ -181,7 +181,7 @@ Agent Flux provides a comprehensive settings interface to customize various aspe
 - **UI Password:** Configure password for web interface security
 - **Root Password:** Manage Docker container root password for SSH access
 
-![settings](res/setup/settings/3-auth.png)
+![settings](res/setup/settings/3-auth-updated.png)
 
 ### Development Settings
 - **RFC Parameters (local instances only):** configure URLs and ports for remote function calls between instances
@@ -255,7 +255,7 @@ ollama pull <model-name>
 
 4. Click `Save` to confirm your settings.
 
-![ollama](res/setup/settings/4-local-models.png)
+![ollama](res/setup/settings/4-local-models-updated.png)
 
 #### Managing your downloaded models
 Once you've downloaded some models, you might want to check which ones you have available or remove any you no longer need.
@@ -325,7 +325,7 @@ For developers or users who need to run Agent Flux directly on their system,see 
 - Right-click and select "Remove" to remove the container
 - Go to "Images" tab and remove the `fluxframeworks/agent-flux-run` image or click the three dots to pull the difference and update the Docker image.
 
-![docker delete image](res/setup/docker-delete-image-1.png)
+![docker delete image](res/setup/docker-delete-image-1-updated.png)
 
 - Search and pull the new image if you chose to remove it
 - Run the new container with the same volume settings as the old one
