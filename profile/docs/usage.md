@@ -59,7 +59,7 @@ Access the chat history in JSON format
   - View the conversation as processed by the LLM
   - Useful for debugging and understanding agent behavior
 
-![History](res/ui-history.png)
+![History](res/ui-history-updated.png)
 
 * **Nudge:** Restart the agent's last process
   - Useful when agents become unresponsive
