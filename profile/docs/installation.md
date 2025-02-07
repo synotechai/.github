@@ -69,7 +69,7 @@ Note*: Offline operation requires prompt adjustments
 - Click the `Pull` button
 - The image will be downloaded to your machine in a few minutes
 
-![docker pull](res/setup/1-docker-image-search-updated.png)
+![docker pull](res/setup/1-docker-image-search-updatedv2.png)
 
 > [!TIP]
 > Alternatively, run the following command in your terminal:
