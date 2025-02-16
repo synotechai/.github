@@ -355,14 +355,5 @@ For developers or users who need to run Agent Flux directly on their system,see 
 > docker run -p $PORT:80 -v /path/to/your/data:/a0 fluxframeworks/agent-flux-run
 > ```
 
-3. **Full Binaries**
-- Using Git/GitHub: Pull the latest version of the Agent Flux repository. 
-- The custom knowledge, solutions, memory, and other data will get ignored, so you don't need to worry about losing any of your custom data. The same goes for your .env file with all of your API keys and settings.json.
-
-> [!WARNING]  
-> - If you update manually, beware: save your .env file with the API keys, and look for new dependencies in requirements.txt. 
-> - If any changes are made to the requirements of the updated version, you have to execute this command inside the a0 conda env after activating it:
-> ```bash
-> pip install -r requirements.txt
 
 
