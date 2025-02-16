@@ -1,6 +1,6 @@
 <div align="center">
 
-![Agent Flux](docs/res/header.png)
+![Agent Flux](docs/res/syno tech banner.png)
 
 # `Agent Flux`
 
