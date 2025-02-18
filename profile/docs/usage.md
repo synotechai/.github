@@ -1,7 +1,7 @@
 # Usage Guide
 This guide explores usage and configuration scenarios for Syno AI. You can consider this as a reference post-installation guide.
 
-![Utility Message with Solutions](res/memory-man-updated.png)
+![Utility Message with Solutions](res/memory-man-updatedsyno.png)
 
 ## Basic Operations
 Syno AI provides several basic operations through its interface:
