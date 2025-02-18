@@ -92,7 +92,7 @@ Syno AI supports direct file attachments in the chat interface for seamless file
   - Perform operations on multiple files simultaneously
   - Confirm successful file operations with detailed responses
 
-![Working with Attachments](res/ui-attachments-2-updated.png)
+![Working with Attachments](res/ui-attachments-2-updatedsyno.png)
 
 > [!TIP]
 > When working with multiple files, you can attach them all at once and then give instructions about what to do with them. The agent will handle them as a batch while keeping you informed of the progress.
@@ -199,7 +199,7 @@ Syno AI supports KaTeX for beautiful mathematical typesetting:
   - Example: Type `$$F = G\frac{m_1m_2}{r^2}$$`
   - Renders as a centered equation
 
-![KaTeX](res/ui-katex-1-updated.png)
+![KaTeX](res/ui-katex-1-updatedsyno.png)
 
 * **Complex Mathematics:** Supports full KaTeX syntax for:
   - Fractions, exponents, and roots
@@ -208,7 +208,7 @@ Syno AI supports KaTeX for beautiful mathematical typesetting:
   - Integrals, summations, and limits
   - Mathematical alignments and equations
 
-![KaTeX display](res/ui-katex-2-updated.png)
+![KaTeX display](res/ui-katex-2-updatedsyno.png)
 
 > [!TIP]
 > When asking the agent to solve mathematical problems, it will automatically respond using KaTeX formatting for clear and professional-looking mathematical expressions.
