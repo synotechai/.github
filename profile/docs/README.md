@@ -1,32 +1,32 @@
-![Agent Flux Logo](res/header.png)
-# Agent Flux Documentation
-To begin with Agent Flux, follow the links below for detailed guides on various topics:
+![Agent Syno Logo](res/syno-tech-banner.png)
+# Agent Syno Documentation
+To begin with Agent Syno, follow the links below for detailed guides on various topics:
 
-- **[Installation](installation.md):** Set up (or [update](installation.md#how-to-update-agent-flux)) Agent Flux on your system.
+- **[Installation](installation.md):** Set up (or [update](installation.md#how-to-update-agent-syno)) Agent Syno on your system.
 - **[Usage Guide](usage.md):** Explore GUI features and usage scenarios.
 - **[Architecture Overview](architecture.md):** Understand the internal workings of the framework.
-- **[Contributing](contribution.md):** Learn how to contribute to the Agent Flux project.
+- **[Contributing](contribution.md):** Learn how to contribute to the Agent Syno project.
 - **[Troubleshooting and FAQ](troubleshooting.md):** Find answers to common issues and questions.
 
-### Your experience with Agent Flux starts now!
+### Your experience with Agent Syno starts now!
 
-- **Download Agent Flux:** Follow the [installation guide](installation.md) to download and run Agent Flux.
-- **Join the Community:** Join the Agent Flux [Discord](https://discord.gg/bF9RYYX5hD) community to discuss ideas, ask questions, and collaborate with other contributors.
-- **Share your Work:** Share your Agent Flux creations, workflows and discoverings on our [Show and Tell](https://github.com/fluxframeworks/agent-flux/discussions/categories/show-and-tell) area on GitHub.
-- **Report Issues:** Use the [GitHub issue tracker](https://github.com/fluxframeworks/agent-flux/issues) to report framework-relative bugs or suggest new features.
+- **Download Agent Syno:** Follow the [installation guide](installation.md) to download and run Agent Syno.
+- **Join the Community:** Join the Agent Syno [Discord](https://discord.gg/bF9RYYX5hD) community to discuss ideas, ask questions, and collaborate with other contributors.
+- **Share your Work:** Share your Agent Syno creations, workflows and discoverings on our [Show and Tell](https://github.com/fluxframeworks/agent-syno/discussions/categories/show-and-tell) area on GitHub.
+- **Report Issues:** Use the [GitHub issue tracker](https://github.com/fluxframeworks/agent-syno/issues) to report framework-relative bugs or suggest new features.
 
 ## Table of Contents
 
-- [Welcome to the Agent Flux Documentation](#agent-flux-documentation)
-  - [Your Experience with Agent Flux](#your-experience-with-agent-flux-starts-now)
+- [Welcome to the Agent Syno Documentation](#agent-syno-documentation)
+  - [Your Experience with Agent Syno](#your-experience-with-agent-syno-starts-now)
   - [Table of Contents](#table-of-contents)
 - [Installation Guide](installation.md)
   - [Windows, macOS and Linux Setup](installation.md#windows-macos-and-linux-setup-guide)
   - [Settings Configuration](installation.md#settings-configuration)
   - [Choosing Your LLMs](installation.md#choosing-your-llms)
   - [Installing and Using Ollama](installation.md#installing-and-using-ollama-local-models)
-  - [Using Agent Flux on Mobile](installation.md#using-agent-flux-on-your-mobile-device)
-  - [How to Update Agent Flux](installation.md#how-to-update-agent-flux)
+  - [Using Agent Syno on Mobile](installation.md#using-agent-syno-on-your-mobile-device)
+  - [How to Update Agent Syno](installation.md#how-to-update-agent-syno)
   - [Full Binaries Installation](installation.md#in-depth-guide-for-full-binaries-installation)
 - [Usage Guide](usage.md)
   - [Basic Operations](usage.md#basic-operations)
