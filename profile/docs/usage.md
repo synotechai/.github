@@ -9,7 +9,7 @@ Syno AI provides several basic operations through its interface:
 ### Restart Framework
 The Restart button allows you to quickly restart the Syno AI framework without using the terminal:
 
-![Restart Framework](res/ui-restarting-updated-v2.png)
+![Restart Framework](res/ui-restarting-updated-v2syno.png)
 
 * Click the "Restart" button in the sidebar
 * A blue notification will appear indicating "Restarting..."
@@ -52,14 +52,14 @@ Located beneath the chat input box, Syno AI provides a set of action buttons for
   - Shows current conversation context
   - Displays active instructions and parameters
 
-![Context](res/ui-context-updatedv2.png)
+![Context](res/ui-context-updatedv2synosyno.png)
 
 ### History: 
 Access the chat history in JSON format
   - View the conversation as processed by the LLM
   - Useful for debugging and understanding agent behavior
 
-![History](res/ui-history-updatedv2.png)
+![History](res/ui-context-updatedv2syno.png)
 
 * **Nudge:** Restart the agent's last process
   - Useful when agents become unresponsive
