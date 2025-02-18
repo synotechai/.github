@@ -122,12 +122,12 @@ Note*: Offline operation requires prompt adjustments
 - The framework will take a few seconds to initialize and the Docker logs will look like the image below.
 - Find the mapped port in Docker Desktop (shown as `<PORT>:80`) or click the port right under the container ID as shown in the image below
 
-![docker logs](res/setup/5-docker-click-to-open-updated.png)
+![docker logs](res/setup/5-docker-click-to-open-updatedsyno.png)
 
 - Open `http://localhost:<PORT>` in your browser
 - The Web UI will open. Agent Syno is ready for configuration!
 
-![docker ui](res/setup/6-docker-a0-running-updated.png)
+![docker ui](res/setup/6-docker-a0-running-updatedsyno.png)
 
 > [!TIP]
 > You can also access the Web UI by clicking the ports right under the container ID in Docker Desktop.
@@ -157,7 +157,7 @@ Agent Syno provides a comprehensive settings interface to customize various aspe
 - **Context Length:** Set the maximum token limit for context window
 - **Context Window Space:** Configure how much of the context window is dedicated to chat history
 
-![chat model settings](res/setup/settings/2-chat-model-updated.png)
+![chat model settings](res/setup/settings/2-chat-model-updatedsyno.png)
 
 ### Utility Model Configuration
 - **Provider & Model:** Select a smaller, faster model for utility tasks like memory organization and summarization
@@ -181,7 +181,7 @@ Agent Syno provides a comprehensive settings interface to customize various aspe
 - **UI Password:** Configure password for web interface security
 - **Root Password:** Manage Docker container root password for SSH access
 
-![settings](res/setup/settings/3-auth-updated.png)
+![settings](res/setup/settings/3-auth-updatedsyno.png)
 
 ### Development Settings
 - **RFC Parameters (local instances only):** configure URLs and ports for remote function calls between instances
