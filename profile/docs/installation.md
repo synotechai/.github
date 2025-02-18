@@ -65,22 +65,22 @@ Note*: Offline operation requires prompt adjustments
 2. **Run Agent Syno:**
 
 2.1. Pull the Agent Syno Docker image:
-- Search for `fluxframeworks/agent-flux-run` in Docker Desktop
+- Search for `synotechai/agent-syno-run` in Docker Desktop
 - Click the `Pull` button
 - The image will be downloaded to your machine in a few minutes
 
-![docker pull](res/setup/1-docker-image-search-updatedv2.png)
+![docker pull](res/setup/1-docker-image-search-updatedv2syno.png)
 
 > [!TIP]
 > Alternatively, run the following command in your terminal:
 >
 > ```bash
-> docker pull fluxframeworks/agent-flux-run
+> docker pull synotechai/agent-syno-run
 > ```
 
 2.2. Create a data directory for persistence:
 - Choose or create a directory on your machine where you want to store Agent Syno's data
-- This can be any location you prefer (e.g., `C:/agent-flux-data` or `/home/user/agent-flux-data`)
+- This can be any location you prefer (e.g., `C:/agent-syno-data` or `/home/user/agent-syno-data`)
 - This directory will contain all your Agent Syno files, like the legacy root folder structure:
   - `/memory` - Agent's memory and learned information
   - `/knowledge` - Knowledge base
@@ -96,24 +96,24 @@ Note*: Offline operation requires prompt adjustments
 
 2.3. Run the container:
 - In Docker Desktop, go back to the "Images" tab
-- Click the `Run` button next to the `fluxframeworks/agent-flux-run` image
+- Click the `Run` button next to the `synotechai/agent-syno-run` image
 - Open the "Optional settings" menu
 - Set the port to `0` in the second "Host port" field (for automatic port assignment)
 - Under "Volumes", configure:
-  - Host path: Your chosen directory (e.g., `C:\agent-flux-data`)
+  - Host path: Your chosen directory (e.g., `C:\agent-syno-data`)
   - Container path: `/a0`
 
-![docker port mapping](res/setup/3-docker-port-mapping-updatedv2.png)
+![docker port mapping](res/setup/3-docker-port-mapping-updatedv2syno.png)
 
 - Click the `Run` button in the "Images" tab.
 - The container will start and show in the "Containers" tab
 
-![docker containers](res/setup/4-docker-container-started-updated.png)
+![docker containers](res/setup/4-docker-container-started-updatedsyno.png)
 
 > [!TIP]
 > Alternatively, run the following command in your terminal:
 > ```bash
-> docker run -p $PORT:80 -v /path/to/your/data:/a0 fluxframeworks/agent-flux-run
+> docker run -p $PORT:80 -v /path/to/your/data:/a0 synotechai/agent-syno-run
 > ```
 > - Replace `$PORT` with the port you want to use (e.g., `50080`)
 > - Replace `/path/to/your/data` with your chosen directory path
@@ -186,7 +186,7 @@ Agent Syno provides a comprehensive settings interface to customize various aspe
 ### Development Settings
 - **RFC Parameters (local instances only):** configure URLs and ports for remote function calls between instances
 - **RFC Password:** Configure password for remote function calls
-Learn more about Remote Function Calls and their purpose [here](#7-configure-agent-flux-rfc).
+Learn more about Remote Function Calls and their purpose [here](#7-configure-agent-syno-rfc).
 
 > [!IMPORTANT]
 > Always keep your API keys and passwords secure.
@@ -323,7 +323,7 @@ For developers or users who need to run Agent Syno directly on their system,see 
 2. **Update Process (Docker Desktop)**
 - Go to Docker Desktop and stop the container from the "Containers" tab
 - Right-click and select "Remove" to remove the container
-- Go to "Images" tab and remove the `fluxframeworks/agent-flux-run` image or click the three dots to pull the difference and update the Docker image.
+- Go to "Images" tab and remove the `synotechai/agent-syno-run` image or click the three dots to pull the difference and update the Docker image.
 
 ![docker delete image](res/setup/docker-delete-image-1-updated.png)
 
@@ -340,19 +340,19 @@ For developers or users who need to run Agent Syno directly on their system,see 
 >
 > ```bash
 > # Stop the current container
-> docker stop agent-flux
+> docker stop agent-syno
 >
 > # Remove the container (data is safe in the folder)
-> docker rm agent-flux
+> docker rm agent-syno
 >
 > # Remove the old image
-> docker rmi fluxframeworks/agent-flux-run
+> docker rmi synotechai/agent-syno-run
 >
 > # Pull the latest image
-> docker pull fluxframeworks/agent-flux-run
+> docker pull synotechai/agent-syno-run
 >
 > # Run new container with the same volume mount
-> docker run -p $PORT:80 -v /path/to/your/data:/a0 fluxframeworks/agent-flux-run
+> docker run -p $PORT:80 -v /path/to/your/data:/a0 synotechai/agent-syno-run
 > ```
 
 
