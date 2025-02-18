@@ -255,7 +255,7 @@ ollama pull <model-name>
 
 4. Click `Save` to confirm your settings.
 
-![ollama](res/setup/settings/4-local-models-updated.png)
+![ollama](res/setup/settings/4-local-models-updatedsyno.png)
 
 #### Managing your downloaded models
 Once you've downloaded some models, you might want to check which ones you have available or remove any you no longer need.
@@ -325,7 +325,7 @@ For developers or users who need to run Agent Syno directly on their system,see 
 - Right-click and select "Remove" to remove the container
 - Go to "Images" tab and remove the `synotechai/agent-syno-run` image or click the three dots to pull the difference and update the Docker image.
 
-![docker delete image](res/setup/docker-delete-image-1-updated.png)
+![docker delete image](res/setup/docker-delete-image-1-updatedsyno.png)
 
 - Search and pull the new image if you chose to remove it
 - Run the new container with the same volume settings as the old one
