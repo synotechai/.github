@@ -1,4 +1,4 @@
-### Need updates from v0.7? 👉[How to update Agent Flux](#how-to-update-agent-flux)
+### Need updates from v0.7? 👉[How to update Agent Syno](#how-to-update-agent-syno)
 
 ## Windows, macOS and Linux Setup Guide
 
@@ -15,7 +15,7 @@
 Note*: Offline operation requires prompt adjustments
 
 1. **Install Docker Desktop:** 
-- Docker Desktop provides the runtime environment for Agent Flux, ensuring consistent behavior and security across platforms
+- Docker Desktop provides the runtime environment for Agent Syno, ensuring consistent behavior and security across platforms
 - The entire framework runs within a Docker container, providing isolation and easy deployment
 - Available as a user-friendly GUI application for all major operating systems
 
@@ -54,7 +54,7 @@ Note*: Offline operation requires prompt adjustments
 <img src="res/setup/image-13.png" alt="docker installed" height="100"/>
 <br><br>
 
-1.5. Create a Docker Hub account when prompted and sign in. This is required to pull the Agent Flux container image.
+1.5. Create a Docker Hub account when prompted and sign in. This is required to pull the Agent Syno container image.
 
 > [!IMPORTANT]  
 > **macOS Configuration:** In Docker Desktop's preferences (Docker menu) → Settings → 
@@ -62,9 +62,9 @@ Note*: Offline operation requires prompt adjustments
 
 ![docker socket macOS](res/setup/macsocket.png)
 
-2. **Run Agent Flux:**
+2. **Run Agent Syno:**
 
-2.1. Pull the Agent Flux Docker image:
+2.1. Pull the Agent Syno Docker image:
 - Search for `fluxframeworks/agent-flux-run` in Docker Desktop
 - Click the `Pull` button
 - The image will be downloaded to your machine in a few minutes
@@ -79,19 +79,19 @@ Note*: Offline operation requires prompt adjustments
 > ```
 
 2.2. Create a data directory for persistence:
-- Choose or create a directory on your machine where you want to store Agent Flux's data
+- Choose or create a directory on your machine where you want to store Agent Syno's data
 - This can be any location you prefer (e.g., `C:/agent-flux-data` or `/home/user/agent-flux-data`)
-- This directory will contain all your Agent Flux files, like the legacy root folder structure:
+- This directory will contain all your Agent Syno files, like the legacy root folder structure:
   - `/memory` - Agent's memory and learned information
   - `/knowledge` - Knowledge base
   - `/instruments` - Instruments and functions
   - `/prompts` - Prompt files
   - `/work_dir` - Working directory
   - `.env` - Your API keys
-  - `settings.json` - Your Agent Flux settings
+  - `settings.json` - Your Agent Syno settings
 
 > [!TIP]
-> Choose a location that's easy to access and backup. All your Agent Flux data 
+> Choose a location that's easy to access and backup. All your Agent Syno data 
 > will be directly accessible in this directory.
 
 2.3. Run the container:
@@ -125,7 +125,7 @@ Note*: Offline operation requires prompt adjustments
 ![docker logs](res/setup/5-docker-click-to-open-updated.png)
 
 - Open `http://localhost:<PORT>` in your browser
-- The Web UI will open. Agent Flux is ready for configuration!
+- The Web UI will open. Agent Syno is ready for configuration!
 
 ![docker ui](res/setup/6-docker-a0-running-updated.png)
 
@@ -133,15 +133,15 @@ Note*: Offline operation requires prompt adjustments
 > You can also access the Web UI by clicking the ports right under the container ID in Docker Desktop.
 
 > [!NOTE]
-> After starting the container, you'll find all Agent Flux files in your chosen 
+> After starting the container, you'll find all Agent Syno files in your chosen 
 > directory. You can access and edit these files directly on your machine, and 
 > the changes will be immediately reflected in the running container.
 
-3. Configure Agent Flux
-- Refer to the following sections for a full guide on how to configure Agent Flux.
+3. Configure Agent Syno
+- Refer to the following sections for a full guide on how to configure Agent Syno.
 
 ## Settings Configuration
-Agent Flux provides a comprehensive settings interface to customize various aspects of its functionality. Access the settings by clicking the "Settings"button with a gear icon in the sidebar.
+Agent Syno provides a comprehensive settings interface to customize various aspects of its functionality. Access the settings by clicking the "Settings"button with a gear icon in the sidebar.
 
 ### Agent Configuration
 - **Prompts Subdirectory:** Choose the subdirectory within `/prompts` for agent behavior customization. The 'default' directory contains the standard prompts.
@@ -192,7 +192,7 @@ Learn more about Remote Function Calls and their purpose [here](#7-configure-age
 > Always keep your API keys and passwords secure.
 
 # Choosing Your LLMs
-The Settings page is the control center for selecting the Large Language Models (LLMs) that power Agent Flux.  You can choose different LLMs for different roles:
+The Settings page is the control center for selecting the Large Language Models (LLMs) that power Agent Syno.  You can choose different LLMs for different roles:
 
 | LLM Role | Description |
 | --- | --- |
@@ -210,7 +210,7 @@ The Settings page is the control center for selecting the Large Language Models 
 > [!CAUTION]
 > Changing the `embedding_llm` will re-index all the memory and knowledge, and 
 > requires clearing the `memory` folder to avoid errors, as the embeddings can't be 
-> mixed in the vector database. Note that this will DELETE ALL of Agent Flux's memory.
+> mixed in the vector database. Note that this will DELETE ALL of Agent Syno's memory.
 
 ## Installing and Using Ollama (Local Models)
 If you're interested in Ollama, which is a powerful tool that allows you to run various large language models locally, here's how to install and use it:
@@ -246,7 +246,7 @@ ollama pull <model-name>
 
 2. A CLI message should confirm the model download on your system
 
-#### Selecting your model within Agent Flux
+#### Selecting your model within Agent Syno
 1. Once you've downloaded your model(s), you must select it in the Settings page of the GUI. 
 
 2. Within the Chat model, Utility model, or Embedding model section, choose Ollama as provider.
@@ -274,8 +274,8 @@ Once you've downloaded some models, you might want to check which ones you have 
 
 - Experiment with different model combinations to find the balance of performance and cost that best suits your needs. E.g., faster and lower latency LLMs will help, and you can also use `faiss_gpu` instead of `faiss_cpu` for the memory.
 
-## Using Agent Flux on your mobile device
-Agent Flux's Web UI is accessible from any device on your network through the Docker container:
+## Using Agent Syno on your mobile device
+Agent Syno's Web UI is accessible from any device on your network through the Docker container:
 
 1. The Docker container automatically exposes the Web UI on all network interfaces
 2. Find the mapped port in Docker Desktop:
@@ -291,15 +291,15 @@ Agent Flux's Web UI is accessible from any device on your network through the Do
 > - The port is automatically assigned by Docker unless you specify one
 
 > [!NOTE]
-> If you're running Agent Flux directly on your system (legacy approach) instead of 
+> If you're running Agent Syno directly on your system (legacy approach) instead of 
 > using Docker, you'll need to configure the host manually in `run_ui.py` to run on all interfaces using `host="0.0.0.0"`.
 
-For developers or users who need to run Agent Flux directly on their system,see the [In-Depth Guide for Full Binaries Installation](#in-depth-guide-for-full-binaries-installation).
+For developers or users who need to run Agent Syno directly on their system,see the [In-Depth Guide for Full Binaries Installation](#in-depth-guide-for-full-binaries-installation).
 
-# How to update Agent Flux
+# How to update Agent Syno
 
-1. **If you come from the previous version of Agent Flux (pre-0.7.1):**
-- Your data is safely stored across various directories and files inside the Agent Flux folder.
+1. **If you come from the previous version of Agent Syno (pre-0.7.1):**
+- Your data is safely stored across various directories and files inside the Agent Syno folder.
 - To update to the new Docker runtime version, you need to save the following files and directories:
   - `/memory` - Agent's memory
   - `/knowledge` - Custom knowledge base
@@ -307,18 +307,18 @@ For developers or users who need to run Agent Flux directly on their system,see 
   - `/prompts` - Custom prompts files (if any has been created)
   - `/work_dir` - Working directory
   - `.env` - Your API keys
-  - `/tmp/settings.json` - Your Agent Flux settings
+  - `/tmp/settings.json` - Your Agent Syno settings
 - Once you have saved these files and directories, you can proceed with the Docker runtime [installation instructions above](#windows-macos-and-linux-setup-guide) setup guide.
-- Reach for the folder where you saved your data and copy it to the new Agent Flux folder set during the installation process.
-- Agent Flux will automatically detect your saved data and use it across memory, knowledge, instruments, prompts and settings.
+- Reach for the folder where you saved your data and copy it to the new Agent Syno folder set during the installation process.
+- Agent Syno will automatically detect your saved data and use it across memory, knowledge, instruments, prompts and settings.
 
 > [!IMPORTANT]
 > Make sure to use the same embedding model you were using before, otherwise 
-> you will have to re-index all of Agent Flux's memory, therefore deleting all 
+> you will have to re-index all of Agent Syno's memory, therefore deleting all 
 > your custom knowledge and memory.
 >
 > If you have issues loading your settings, you can try to delete the `/tmp/settings.json` 
-> file and let Agent Flux generate a new one.
+> file and let Agent Syno generate a new one.
 
 2. **Update Process (Docker Desktop)**
 - Go to Docker Desktop and stop the container from the "Containers" tab
@@ -333,7 +333,7 @@ For developers or users who need to run Agent Flux directly on their system,see 
 > [!IMPORTANT]
 > Make sure to use the same volume mount path when running the new
 > container to preserve your data. The exact path depends on where you stored
-> your Agent Flux data directory (the chosen directory on your machine).
+> your Agent Syno data directory (the chosen directory on your machine).
 
 > [!TIP]
 > Alternatively, run the following commands in your terminal:
